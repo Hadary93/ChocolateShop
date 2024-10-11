@@ -1,0 +1,48 @@
+# Ignore build output directories
+bin/
+obj/
+
+# Ignore user-specific files
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Ignore NuGet Packages
+*.nupkg
+# Include NuGet packages in the 'packages' directory if they are not tracked by source control
+!packages/
+
+# Ignore Rider project files
+.idea/
+*.sln.iml
+
+# Ignore VS Code project files
+.vscode/
+
+# Ignore temporary files
+*.tmp
+*.temp
+*.log
+
+# Ignore database files
+*.mdf
+*.ldf
+
+# Ignore Visual Studio working files
+.vs/
+.vscode/
+
+# Ignore crash reports
+*.stackdump
+
+# Ignore environment files
+.env
+
+# Ignore JetBrains Rider
+.idea/
+.idea/
+
+# Ignore ReSharper files
+_ReSharper.Caches/
