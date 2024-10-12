@@ -2,9 +2,9 @@
 {
     public class Chocolate
     {
-        private string Id { get; set; }
-        private string Name { get; set; }
-        private double Price { get; set; }
+        public string Id { get; set; }
+        public string Name { get; set; }
+        public double Price { get; set; }
 
         public Chocolate(string name)
         {

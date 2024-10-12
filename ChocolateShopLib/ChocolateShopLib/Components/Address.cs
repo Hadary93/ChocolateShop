@@ -8,13 +8,14 @@ namespace ChocolateShopLib.Components
 {
     public class Address
     {
-        private int PostalCode { get; set; }
-        private string Street { get; set; }
-        private string City { get; set; }
-        private string Country { get; set; }
+        public int PostalCode { get; set; }
+        public string Street { get; set; }
+        public string City { get; set; }
+        public string Country { get; set; }
+        public string Description { get; set; }
 
 
-        public Address(string street, string city, string country, int postalCode)
+        public Address(string street, string city, string country, int postalCode, string description)
         {
             Street = street;
 
@@ -23,6 +24,8 @@ namespace ChocolateShopLib.Components
             Country = country;
 
             PostalCode = postalCode;
+
+            Description = string.Empty;
         }
     }
 }

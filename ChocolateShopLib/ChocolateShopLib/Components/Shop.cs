@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,27 +21,41 @@ namespace ChocolateShopLib.Components
         }
         public void AddChocolate(Chocolate chocolate)
         {
+            if (chocolate == null) throw new ArgumentNullException(nameof(chocolate));
+
             Chocolates.Add(chocolate);
         }
-        public void RemoveChocolate(Chocolate chocolate)
+        public bool RemoveChocolate(Chocolate chocolate)
         {
-            Chocolates.Remove(chocolate);
+            if (Chocolates.Contains(chocolate)) {
+
+                Chocolates.Remove(chocolate);
+                return true;
+            }
+            return false;
         }
         public void AddCustomer(Customer customer)
         {
+            if (customer == null) throw new ArgumentNullException(nameof(customer));
+
             Customers.Add(customer);
         }
-        public void RemoveCustomer(Customer customer)
+        public bool RemoveCustomer(Customer customer)
         {
-            Customers.Remove(customer);
+            if (Customers.Contains(customer)) {
+
+                Customers.Remove(customer);
+                return true;
+            }
+            return false;
         }
         public IEnumerable<Order> GetOrders()
         {
             return Customers.SelectMany(c => c.GetOrders());
         }
-        public IEnumerable<Customer> GetCustomer()
+        public IEnumerable<Customer> GetCustomers()
         {
-            return Customers;
+            return Customers.AsReadOnly();
         }
     }
 }

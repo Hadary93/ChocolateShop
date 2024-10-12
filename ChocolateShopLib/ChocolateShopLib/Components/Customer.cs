@@ -9,12 +9,12 @@ namespace ChocolateShopLib.Components
 {
     public class Customer
     {
-        private string Id { get; set; }
-        private string FirstName { get; set; }
-        private string LastName { get; set; }
-        private List<Address> Address { get; set; }
-        private List<Order> orders { get; set; }
-        private Cart Cart { get; set; }
+        public string Id { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public List<Address> Address { get; set; }
+        public List<Order> Orders { get; set; }
+        public Cart Cart { get; set; }
 
         public Customer(string firstName, string lastName)
         {
@@ -26,14 +26,14 @@ namespace ChocolateShopLib.Components
 
             Address = new List<Address>();
 
-            orders = new List<Order>();
+            Orders = new List<Order>();
 
             Cart = new Cart();
         }
 
         public IEnumerable<Order> GetOrders()
         {
-            return orders;
+            return Orders;
         }
     }
 }
