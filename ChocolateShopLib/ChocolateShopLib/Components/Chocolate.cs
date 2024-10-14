@@ -1,7 +1,10 @@
-﻿namespace ChocolateShopLib.Components
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace ChocolateShopLib.Components
 {
     public class Chocolate
     {
+        [Key]
         public string Id { get; set; }
         public string Name { get; set; }
         public double Price { get; set; }
@@ -12,6 +15,10 @@
 
             Name = name;
 
+        }
+        public Chocolate()
+        {
+            
         }
     }
 }

@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChocolateShopLib", "ChocolateShopLib\ChocolateShopLib.csproj", "{20CB03F9-D335-453F-9FA6-297AB70DCD94}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChocolateShopData", "ChocolateShopData\ChocolateShopData.csproj", "{3F5203A0-7EAD-4E22-A073-DB59E9A3394C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{20CB03F9-D335-453F-9FA6-297AB70DCD94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20CB03F9-D335-453F-9FA6-297AB70DCD94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20CB03F9-D335-453F-9FA6-297AB70DCD94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F5203A0-7EAD-4E22-A073-DB59E9A3394C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F5203A0-7EAD-4E22-A073-DB59E9A3394C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F5203A0-7EAD-4E22-A073-DB59E9A3394C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F5203A0-7EAD-4E22-A073-DB59E9A3394C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

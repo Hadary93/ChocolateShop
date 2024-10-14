@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,13 +10,17 @@ namespace ChocolateShopLib.Components
 {
     public class Customer
     {
+        [Key]
         public string Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public List<Address> Address { get; set; }
         public List<Order> Orders { get; set; }
         public Cart Cart { get; set; }
-
+        public Customer()
+        {
+                
+        }
         public Customer(string firstName, string lastName)
         {
             Id = Guid.NewGuid().ToString();
