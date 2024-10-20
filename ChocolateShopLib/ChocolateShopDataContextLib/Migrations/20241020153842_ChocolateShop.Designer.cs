@@ -3,20 +3,23 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace ChocolateShopData.Migrations
+namespace ChocolateShopDataContextLib.Migrations
 {
-    [DbContext(typeof(ChocolateShopContext))]
-    partial class ChocolateShopContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(ChocolateShopDbContext))]
+    [Migration("20241020153842_ChocolateShop")]
+    partial class ChocolateShop
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.10")
+                .HasAnnotation("ProductVersion", "9.0.0-rc.2.24474.1")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -145,7 +148,10 @@ namespace ChocolateShopData.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Shops");
+                    b.ToTable("Shops", t =>
+                        {
+                            t.HasComment("Shop managed on the website");
+                        });
                 });
 
             modelBuilder.Entity("ChocolateShopLib.Components.Address", b =>

@@ -9,7 +9,6 @@ namespace ChocolateShopLib.Components
 {
     public class Address
     {
-        [Key]
         public int Id {  get; set; }    
         public int PostalCode { get; set; }
         public string Street { get; set; }
@@ -17,21 +16,21 @@ namespace ChocolateShopLib.Components
         public string Country { get; set; }
         public string Description { get; set; }
 
-        public Address()
-        {
+        //public Address()
+        //{
                 
-        }
-        public Address(string street, string city, string country, int postalCode, string description)
-        {
-            Street = street;
+        //}
+        //public Address(string street, string city, string country, int postalCode, string description)
+        //{
+        //    Street = street;
 
-            City = city;
+        //    City = city;
 
-            Country = country;
+        //    Country = country;
 
-            PostalCode = postalCode;
+        //    PostalCode = postalCode;
 
-            Description = string.Empty;
-        }
+        //    Description = string.Empty;
+        //}
     }
 }

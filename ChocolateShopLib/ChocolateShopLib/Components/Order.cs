@@ -9,25 +9,24 @@ namespace ChocolateShopLib.Components
 {
     public class Order
     {
-        [Key]
         public string Id { get; set; }
-        public List<Chocolate> Chocolates { get; set; }
+        public ICollection<Chocolate> Chocolates { get; set; }
         public Customer Customer { get; set; }
         public DateTime OrderTime { get; set; }
 
-        public Order() { 
+        //public Order() { 
         
-        }
+        //}
 
-        public Order(Customer customer)
-        {
-            Id = Guid.NewGuid().ToString();
+        //public Order(Customer customer)
+        //{
+        //    Id = Guid.NewGuid().ToString();
 
-            OrderTime = DateTime.Now;
+        //    OrderTime = DateTime.Now;
 
-            Customer = customer;
+        //    Customer = customer;
 
-            Chocolates = new List<Chocolate>();
-        }
+        //    Chocolates = new List<Chocolate>();
+        //}
     }
 }

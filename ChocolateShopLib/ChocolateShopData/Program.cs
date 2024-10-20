@@ -10,7 +10,7 @@ namespace ChocolateShopData
     {
         public static void Main(string[] args) { 
         
-            ChocolateShopContext DBcontext = new ChocolateShopContext();
+            ChocolateShopDbContext DBcontext = new ChocolateShopDbContext();
 
             DBcontext.Shops.Add(new ChocolateShopLib.Components.Shop());
 

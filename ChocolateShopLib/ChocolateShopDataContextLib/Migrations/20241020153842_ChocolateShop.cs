@@ -3,10 +3,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace ChocolateShopData.Migrations
+namespace ChocolateShopDataContextLib.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class ChocolateShop : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -33,7 +33,8 @@ namespace ChocolateShopData.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Shops", x => x.Id);
-                });
+                },
+                comment: "Shop managed on the website");
 
             migrationBuilder.CreateTable(
                 name: "Customers",
