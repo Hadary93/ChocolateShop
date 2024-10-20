@@ -11,8 +11,8 @@ namespace ChocolateShopLib.Components
     public class Shop
     {
         public int Id { get; set; }
-        private ICollection<Chocolate> Chocolates { get; set; }
-        private ICollection<Customer> Customers { get; set; }
+        public ICollection<Chocolate> Chocolates { get; set; }
+        public ICollection<Customer> Customers { get; set; }
 
         //public Shop()
         //{

@@ -20,9 +20,4 @@ public class ChocolateShopDbContext : DbContext
                     errorNumbersToAdd: null  // Specific SQL error numbers to retry (optional)
                 ));
     }
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-        // Apply configurations for entities
-        modelBuilder.ApplyConfiguration(new ChocolateShopConfiguration());
-    }
 }
