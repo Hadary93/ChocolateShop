@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChocolateShopData", "Chocol
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChocolateShopDataContextLib", "ChocolateShopDataContextLib\ChocolateShopDataContextLib.csproj", "{C5DD1928-BEF0-4596-A2F6-7BF52459D140}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChocolateShopAPI", "ChocolateShopAPI\ChocolateShopAPI.csproj", "{813D109D-3551-42B0-A083-BF7140C11C97}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C5DD1928-BEF0-4596-A2F6-7BF52459D140}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5DD1928-BEF0-4596-A2F6-7BF52459D140}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5DD1928-BEF0-4596-A2F6-7BF52459D140}.Release|Any CPU.Build.0 = Release|Any CPU
+		{813D109D-3551-42B0-A083-BF7140C11C97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{813D109D-3551-42B0-A083-BF7140C11C97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{813D109D-3551-42B0-A083-BF7140C11C97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{813D109D-3551-42B0-A083-BF7140C11C97}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
